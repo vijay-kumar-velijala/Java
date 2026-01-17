@@ -1,0 +1,59 @@
+package com.model;
+
+public class Employees {
+
+	//This is Employee POJO class
+	 
+	
+	//This are employee field
+		private int empid;
+		
+		private String empname;
+		
+		private double empsalary;
+
+		public Employees() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
+
+		public Employees(int empid, String empname, double empsalary) {
+			super();
+			this.empid = empid;
+			this.empname = empname;
+			this.empsalary = empsalary;
+		}
+
+		public int getEmpid() {
+			return empid;
+		}
+
+		public void setEmpid(int empid) {
+			this.empid = empid;
+		}
+
+		public String getEmpname() {
+			return empname;
+		}
+
+		public void setEmpname(String empname) {
+			this.empname = empname;
+		}
+
+		public double getEmpsalary() {
+			return empsalary;
+		}
+
+		public void setEmpsalary(double empsalary) {
+			this.empsalary = empsalary;
+		}
+
+		@Override
+		public String toString() {
+			return "Employees [empid=" + empid + ", empname=" + empname + ", empsalary=" + empsalary + "]";
+		}
+		
+		
+		
+		
+	}

@@ -14,7 +14,6 @@ public class Employees {
 
 		public Employees() {
 			super();
-			// TODO Auto-generated constructor stub
 		}
 
 		public Employees(int empid, String empname, double empsalary) {

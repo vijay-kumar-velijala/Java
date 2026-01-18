@@ -1,22 +1,26 @@
 package com.model;
 
-public class Employees {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Employee {
 
 	//This is Employee POJO class
 	 
 	
-	//This are employee field
+        @Id
 		private int empid;
 		
 		private String empname;
 		
 		private double empsalary;
 
-		public Employees() {
+		public Employee() {
 			super();
 		}
 
-		public Employees(int empid, String empname, double empsalary) {
+		public Employee(int empid, String empname, double empsalary) {
 			super();
 			this.empid = empid;
 			this.empname = empname;

@@ -15,12 +15,11 @@
 </dependency>
   
   
-  <!-- Source: https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+ <!-- Source: https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
 <dependency>
-    <groupId>org.hibernate</groupId>
+    <groupId>org.hibernate.orm</groupId>
     <artifactId>hibernate-core</artifactId>
-    <version>6.5.2.Final</version>
-    <type>pom</type>
+    <version>7.0.9.Final</version>
     <scope>compile</scope>
 </dependency>
 

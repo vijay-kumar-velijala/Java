@@ -1,22 +1,20 @@
 package com;
 
+import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 import com.model.Employee;
+import com.util.HibernateUtil;
 
 public class Application {
 
 	public static void main(String[] args) {
 		
-		Configuration configuration=new Configuration();
 		
-		configuration.configure("hibernate.cfg.xml");
 		
-		configuration.addAnnotatedClass(Employee.class);
-		
-		SessionFactory sessionFactory=configuration.buildSessionFactory();
+		SessionFactory sessionFactory=HibernateUtil.getSessionFactory();
 		
 		Session session=sessionFactory.openSession();
 		
